@@ -51,18 +51,21 @@ body {
   width: 25px;
   height: 25px;
 }
-.header .nav .nav__link__items, .header .nav .nav__link__items__top {
+.header .nav .nav__link__items,
+.header .nav .nav__link__items__top {
   display: none;
   gap: 30px;
   display: none;
   align-items: center;
 }
-.header .nav .nav__link__items .nav__links, .header .nav .nav__link__items__top .nav__links {
+.header .nav .nav__link__items .nav__links,
+.header .nav .nav__link__items__top .nav__links {
   display: flex;
   gap: 30px;
   align-items: center;
 }
-.header .nav .nav__link__items .nav__links .nav__link, .header .nav .nav__link__items__top .nav__links .nav__link {
+.header .nav .nav__link__items .nav__links .nav__link,
+.header .nav .nav__link__items__top .nav__links .nav__link {
   font-weight: 600;
   font-size: 18px;
   text-align: center;
@@ -72,7 +75,8 @@ body {
   padding: 5px 0px;
   position: relative;
 }
-.header .nav .nav__link__items .nav__links .nav__link::after, .header .nav .nav__link__items__top .nav__links .nav__link::after {
+.header .nav .nav__link__items .nav__links .nav__link::after,
+.header .nav .nav__link__items__top .nav__links .nav__link::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -82,13 +86,15 @@ body {
   background: #a56af2;
   transition: 0.5s;
 }
-.header .nav .nav__link__items .nav__links .nav__link:hover::after, .header .nav .nav__link__items__top .nav__links .nav__link:hover::after {
+.header .nav .nav__link__items .nav__links .nav__link:hover::after,
+.header .nav .nav__link__items__top .nav__links .nav__link:hover::after {
   width: 100%;
 }
-.header .nav .nav__link__items .nav__items__btn, .header .nav .nav__link__items__top .nav__items__btn {
+.header .nav .nav__link__items .nav__items__btn,
+.header .nav .nav__link__items__top .nav__items__btn {
   width: 152px;
   height: 60px;
-  background-color: #A259FF;
+  background-color: #a259ff;
   border-radius: 20px;
   border: none;
   display: flex;
@@ -101,11 +107,13 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.header .nav .nav__link__items .nav__items__btn:hover, .header .nav .nav__link__items__top .nav__items__btn:hover {
+.header .nav .nav__link__items .nav__items__btn:hover,
+.header .nav .nav__link__items__top .nav__items__btn:hover {
   background-color: #fff;
   color: #8e5ecd;
 }
-.header .nav .nav__link__items .nav__items__btn:hover .fa-user, .header .nav .nav__link__items__top .nav__items__btn:hover .fa-user {
+.header .nav .nav__link__items .nav__items__btn:hover .fa-user,
+.header .nav .nav__link__items__top .nav__items__btn:hover .fa-user {
   color: #8e5ecd;
   font-style: 32px;
 }
@@ -840,5 +848,193 @@ body {
   }
   .browse .browse__cards .browse__cards__inner .browse__card .browse__card__p {
     font-size: 22px;
+  }
+}
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center;
+}
+.discover .discover__top {
+  display: flex;
+  align-items: center;
+}
+.discover .discover__top .discover__top__h {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: #fff;
+}
+.discover .discover__top .disover__top__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+.discover .discover__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.discover .discover__cards .discover__card {
+  width: 315px;
+  background-color: #3b3b3b;
+  border-radius: 20px;
+}
+.discover .discover__cards .discover__card .discover__info__box {
+  padding: 20px;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__info__box__h {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__info__box__avatars {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 22px;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__info__box__avatars .discover__info__box__avatars__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  font-family: mono;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__card__sales {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__card__sales .discover__card__sales__info__text {
+  display: flex;
+  justify-content: space-between;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__card__sales .discover__card__sales__info__text p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #858584;
+  letter-spacing: 0.5px;
+  font-family: mono;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__card__sales .discover__card__sales__info__num {
+  display: flex;
+  justify-content: space-between;
+}
+.discover .discover__cards .discover__card .discover__info__box .discover__card__sales .discover__card__sales__info__num p {
+  font-family: mono;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #fff;
+}
+.discover .discover__top__btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: transparent;
+  border: 2px solid #a259ff;
+  display: none;
+}
+.discover .discover__top__btn i {
+  font-size: 16px;
+  color: #a259ff;
+}
+.discover .discover__top__btn p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+}
+.discover .discover__top__btn:hover {
+  background-color: #fff;
+}
+.discover .discover__top__btn:hover p {
+  color: #a259ff;
+}
+.discover .discover__card__btn {
+  width: 315px;
+  height: 71px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: transparent;
+  border: 2px solid #a259ff;
+}
+.discover .discover__card__btn i {
+  font-size: 18px;
+  color: #a259ff;
+}
+.discover .discover__card__btn p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+}
+.discover .discover__card__btn:hover {
+  background-color: #fff;
+}
+.discover .discover__card__btn:hover p {
+  color: #a259ff;
+}
+
+@media (min-width: 690px) {
+  .discover {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .discover .discover__top {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .discover .discover__top .discover__top__btn {
+    display: flex;
+  }
+  .discover .discover__cards {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .discover .discover__cards .discover__card {
+    width: 330px;
+  }
+  .discover .discover__cards .discover__card .discover__card__img {
+    width: 100%;
+  }
+  .discover .discover__card__btn {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .discover {
+    display: flex;
+    flex-direction: column;
+  }
+  .discover .discover__top {
+    width: 1000px;
+  }
+  .discover .discover__top .discover__top__btn {
+    display: flex;
+  }
+  .discover .discover__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .discover .discover__card__btn {
+    display: none;
   }
 }
