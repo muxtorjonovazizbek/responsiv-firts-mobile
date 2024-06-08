@@ -627,18 +627,22 @@ body {
 }
 .creators__tablet .creators__tablet__bottom .creators__tablet__cards {
   width: 100%;
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
   background-color: #3B3B3B;
   border-radius: 20px;
   padding: 20px;
   gap: 20px;
+  flex-basis: 300px;
   position: relative;
 }
 .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card .creators__tablet__card__img__ava {
@@ -700,24 +704,29 @@ body {
   main .creators__tablet {
     display: block;
   }
-  main .creators__tablet__bottom .creators__tablet__cards {
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
   }
-  main .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card {
-    flex: 1/2;
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card {
+    display: flex;
+    justify-content: center;
   }
-  main .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales {
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts {
+    display: flex;
+    justify-content: center;
+  }
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales {
     display: flex;
     gap: 5px;
   }
-  main .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales .creators__tablet__card__sales_fp {
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales .creators__tablet__card__sales_fp {
     color: #858584;
   }
-  main .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales .creators__tablet__card__sales_sp {
+  main .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card__taxts .creators__tablet__card__sales .creators__tablet__card__sales_sp {
     font-family: mono;
     color: #fff;
   }
@@ -764,5 +773,72 @@ body {
   .creators__tablet .creators__tablet__bottom .creators__tablet__cards .creators__tablet__card .creators__tablet__card__taxts .creators__tablet__card__sales .creators__tablet__card__sales_fp .creators__tablet__card__sales_sp {
     font-family: mono;
     font-size: 16px;
+  }
+}
+.browse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.browse .browse__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  color: white;
+  letter-spacing: 2px;
+}
+.browse .browse__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.browse .browse__cards .browse__cards__inner {
+  display: flex;
+  overflow: hidden;
+}
+.browse .browse__cards .browse__cards__inner .browse__card {
+  position: relative;
+  width: 150px;
+  border-radius: 20px;
+  background-color: #616060;
+}
+.browse .browse__cards .browse__cards__inner .browse__card:hover .browse__card__img__brush {
+  opacity: 1;
+}
+.browse .browse__cards .browse__cards__inner .browse__card:hover .browse__card__img {
+  filter: blur(3px);
+}
+.browse .browse__cards .browse__cards__inner .browse__card__img {
+  width: 100%;
+  transition: 0.4s ease-out;
+}
+.browse .browse__cards .browse__cards__inner .browse__card__img__brush__cover {
+  position: absolute;
+  transform: translate(-50%, -90%);
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+.browse .browse__cards .browse__cards__inner .browse__card__img__brush__cover .browse__card__img__brush {
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+.browse .browse__cards .browse__cards__inner .browse__card__p {
+  padding: 20px 20px 25px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .browse .browse__cards .browse__cards__inner .browse__card {
+    width: 240px;
+  }
+  .browse .browse__cards .browse__cards__inner .browse__card .browse__card__p {
+    font-size: 22px;
   }
 }

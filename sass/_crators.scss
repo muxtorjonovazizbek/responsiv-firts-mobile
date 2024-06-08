@@ -172,18 +172,23 @@
         padding-top: 40px;
         .creators__tablet__cards {
             width: 100%;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
             display: flex;
-            flex-direction: row;
+            // flex-direction: row;
+            align-items: center;
+            justify-content: center;
             gap: 20px;
             .creators__tablet__card {
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                width: 50%; 
+                width: 100%; 
                 background-color: #3B3B3B;
                 border-radius: 20px;
                 padding: 20px;
                 gap: 20px;
+                // flex-grow: 1;
+                flex-basis: 300px;
                 position: relative;
                 
                 .creators__tablet__card__img__ava {
@@ -263,33 +268,38 @@
 
         .creators__tablet {
             display: block;
-        }
-
-        .creators__tablet__bottom {
-            .creators__tablet__cards {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 30px;
-                .creators__tablet__card {
-                    flex: 1/2;
-                }
-                .creators__tablet__card__taxts {
-                    .creators__tablet__card__sales {
+            .creators__tablet__bottom {
+                .creators__tablet__cards {
+                    // background-color: #fff;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                    .creators__tablet__card {
                         display: flex;
-                        gap: 5px;
-                        .creators__tablet__card__sales_fp {
-                            color: #858584;
-                        }
-                        .creators__tablet__card__sales_sp {
-                            font-family: mono;
-                            color: #fff;
+                        justify-content: center;
+                        
+                    }
+                    .creators__tablet__card__taxts {
+                        display: flex;
+                        justify-content: center;
+                        .creators__tablet__card__sales {
+                            display: flex;
+                            gap: 5px;
+                            .creators__tablet__card__sales_fp {
+                                color: #858584;
+                            }
+                            .creators__tablet__card__sales_sp {
+                                font-family: mono;
+                                color: #fff;
+                            }
                         }
                     }
                 }
             }
         }
+
     }
 }
 
