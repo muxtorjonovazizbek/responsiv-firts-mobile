@@ -1,0 +1,175 @@
+.create {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .create__img__cover {
+        width: 100%;
+        .create__main__img {
+            width: 100%;
+        }.create__main__imgtwo {
+            display: none;
+        }
+        .create__main__imgthree {
+            display: none;
+        }
+    }
+    .create__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        .create__info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+            .create__box__h {
+                font-weight: 600;
+                font-size: 38px;
+                line-height: 45px;
+                color: #fff;
+            }
+            .create__box__p {
+                width: 325px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #fff;
+            }
+
+        }
+
+        .create__box__form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            .create__box__form__inp__cover {
+                width: 315px;
+                height: 46px;
+                border-radius: 20px;
+                border: 1px solid #858584;
+                padding: 13px 20px;
+                display: flex;  
+                gap: 12px;
+                background-color: #fff;
+               
+                span {
+                    font-size: 18px;
+                    color: #BDBDBD;
+                }
+                input {
+                    background: none;
+                    border: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    outline: none;
+                    
+                }
+                ::placeholder {
+                    color: #2B2B2B;
+                }
+
+            }
+            .create__box__form__btn__cover {
+                width: 315px;
+                height: 46px;
+                border-radius: 20px;
+                border: 1px solid #858584;
+                padding: 13px 20px;
+                display: flex;  
+                gap: 12px;
+                background-color: #A259FF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 15px;
+                transition: 0.3s ease-out;
+                &:hover {
+                    background-color: #fff;
+                }
+                &:hover button {
+                    color: #A259FF;
+                }
+                button {
+                    border: none;
+                    background: none;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #fff;
+                    transition: 0.2s ease-out;
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .create {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        .create__box {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: 80px;
+            .create__info {
+                display: flex;
+                justify-content: start;
+                align-items: start;
+                .create__box__p {
+                    text-align: left;
+                    width: 325px;
+                }
+            }
+        }
+        .create__img__cover {
+            .create__main__img {
+               display: none;
+            }
+            .create__main__imgtwo {
+                display: block;
+            }
+
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .create {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 60px;
+        .create__box {
+            margin-top: 100px;
+            .create__info {
+                .create__box__h {
+                    font-size: 51px;
+                    line-height: 56px;
+                }
+                .create__box__p {
+                    font-size: 22px;
+                    line-height: 35px;
+                    width: 460px;
+                }
+            }
+        }
+        .create__img__cover {
+            .create__main__img {
+               display: none;
+            }
+            .create__main__imgtwo {
+                display: none;
+            }
+            .create__main__imgthree {
+                display: block;
+            }
+
+        }
+    }
+}
