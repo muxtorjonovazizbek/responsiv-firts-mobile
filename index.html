@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./imgs/favicon img.png">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Responsiv First Mobile</title>
+    <title>Marketplace</title>
+
+    <style>
+        .loader {
+            top: 0;
+            position: fixed;
+            width: 100vw;
+            left: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            background: #2B2B2B;
+            transition: opacity 1s, visibility 1s;
+        }
+
+        .loader--hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+
+        .loader::after {
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 15px solid grey;
+            border-top-color: #A259FF;
+            border-radius: 50%;
+            animation: loading 1s ease-in-out infinite;
+        }
+
+        @keyframes loading {
+            from {transform: rotate(0);}
+            to {transform: rotate(1turn);}
+
+            /*The rotate animation can be given like this above or below both work same  */
+
+           /* 0% {
+            transform: rotate(0deg);
+           }
+           100% {
+            transform: rotate(360deg);
+           } */
+        }
+    </style>
+
+    <!-- <script>
+        window.addEventListener("load", () =>  {
+            const loader = document.querySelector(".loader");
+
+            loader.classList.add("loader--hidden");
+
+            document.querySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector(".loader"));
+            });
+        });
+    </script> -->
 </head>
 <body>
+
+    <div class="loader"></div>
+
+
     <header class="header">
         <nav class="nav container">
            <a href="index.html"> <img class="nav__logo" src="./imgs/logo/nav/logo.svg" alt="logo-img"></a>
