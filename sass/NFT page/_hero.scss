@@ -1,0 +1,41 @@
+.hero {
+    width: 100%;
+    .hero__img {
+        width: 100%;
+    }
+    .hero__img__table {
+        width: 100%;
+        display: none;
+    }
+    .hero__img__desk {
+        width: 100%;
+        display: none;
+    }
+
+}
+
+@media (min-width:740px) {
+    .hero {
+        .hero__img {
+            display: none;
+        }
+        .hero__img__table {
+            display: block;
+        }
+
+    }
+}
+@media (min-width:1200px) {
+    .hero {
+        .hero__img {
+            display: none;
+        }
+        .hero__img__table {
+            display: none;
+        }
+        .hero__img__desk {
+            display: block;
+        }
+
+    }
+}

@@ -1,0 +1,308 @@
+.orbitians {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .orbitians__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .orbitians__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .orbitians__heading__title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 39px;
+        color: #fff;
+      }
+      .orbitians__heading__desk {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858584;
+      }
+    }
+    .orbitians__auctsion__deadline {
+      border-radius: 20px;
+      padding: 30px;
+    //   width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      background-color: #3b3b3b;
+      .orbitians__auctsion___deadline__top {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .auctsion__deadline__top__warning {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 13px;
+          color: #fff;
+          font-family: mono;
+        }
+        .auctsion__deadline__top__time {
+          display: flex;
+          gap: 10px;
+          .auctsion__deadline__top__time__num {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            h4 {
+              font-weight: 700;
+              font-size: 38px;
+              line-height: 45px;
+              color: #fff;
+            }
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 13px;
+              color: #fff;
+            }
+          }
+          .auctsion__deadline__top__time__num__dots {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 39px;
+            color: #fff;
+          }
+        }
+      }
+      .orbitians__auctsion___deadline__bottom {
+        button {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: #fff;
+          padding: 19px 90px;
+          border-radius: 20px;
+          border: none;
+          background-color: #a259ff;
+          &:hover {
+            background-color: #fff;
+            color: #a259ff;
+          }
+        }
+      }
+    }
+    .orbitians__creator {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      .orbitians__creator__p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858584;
+        font-family: mono;
+      }
+      .orbitians__creator__cover {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .orbitians__creator__cover__p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #fff;
+        }
+      }
+    }
+    .orbitians__description {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .orbitians__description__h {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858584;
+        font-family: mono;
+      }
+      .orbitians__description__p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+      }
+    }
+    .orbitians__details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858584;
+        font-family: mono;
+      }
+      .orbitians__details__cover {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          color: #ffffff;
+        }
+      }
+    }
+    .orbitians__tags {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #858584;
+        font-family: mono;
+      }
+      .orbitians__tags__cover {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        p {
+          width: fit-content;
+          padding: 12px 30px;
+          font-weight: 500;
+          font-size: 16px;
+          text-transform: uppercase;
+          line-height: 22px;
+          color: #fff;
+          border-radius: 20px;
+          background-color: #3b3b3b;
+          &:hover {
+            background-color: #636363;
+          }
+        }
+      }
+    }
+  }
+  .orbitians__auctsion__deadline__desk {
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #3b3b3b;
+    display: none;
+    .orbitians__auctsion___deadline__desk__top {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .auctsion__deadline__desk__top__warning {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13px;
+        color: #fff;
+        font-family: mono;
+      }
+      .auctsion__deadline__desk__top__time {
+        display: flex;
+        gap: 10px;
+        .auctsion__deadline__desk__top__time__num {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          h4 {
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 45px;
+            color: #fff;
+          }
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 13px;
+            color: #fff;
+          }
+        }
+        .auctsion__deadline__desk__top__time__num__dots {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 39px;
+          color: #fff;
+        }
+      }
+    }
+    .orbitians__auctsion___deadline__desk__bottom {
+      button {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+        padding: 19px 90px;
+        border-radius: 20px;
+        border: none;
+        background-color: #a259ff;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: #a259ff;
+        }
+       
+      }
+    }
+  }
+
+  
+}
+
+@media (min-width:740px) {
+    main {
+        .orbitians {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+            .orbitians__wrapper {
+                .orbitians__auctsion__deadline {
+                    display: none;
+                }
+            }
+            .orbitians__auctsion__deadline__desk {
+                display: flex;
+                height: fit-content;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    main {
+       .orbitians {
+       display: flex;
+       justify-content: space-between;
+        .orbitians__wrapper {
+            .orbitians__description {
+                .orbitians__description__p {
+                    width: 650px;
+                }
+            }
+            .orbitians__tags {
+                .orbitians__tags__cover {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            
+            
+        }
+        .orbitians__auctsion__deadline__desk {
+            width: 350px;
+        }
+       } 
+    }
+}
+
+
+
+
+
+
+
