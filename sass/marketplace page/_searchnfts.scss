@@ -1,0 +1,157 @@
+.searchNfts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    .search__nfts__h {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 39px;
+        color: #fff;
+    }
+    .search__nfts__p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    .search__nfts__inp__cover {
+        padding: 19px 20px;
+        border-radius: 20px;
+        border: 1px solid #3B3B3B;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+        .search__nfts__inp__cover__input {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #858584;
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .hero__bottom { 
+        margin-top: 40px;
+        border-top: 1px solid #3B3B3B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 30px;
+        .hero__bottom__cover {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            .hero__bottom__cover__inner {
+                display: flex;
+                align-items: center;
+                .hero__btn__p{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 157px;
+                    height: 60px;
+                    border-bottom: 2px solid transparent;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #858584;
+                    transition: 0.3s ease;
+                    &:hover {
+                       border-color: #858584;
+                       color: #fff;
+                        
+                    }
+                    &:hover .hero__btn__span {
+                        background-color:#858584;
+                    }
+                    .hero__btn__span {
+                        display: none;
+                        transition: 0.3s ease;
+                    }
+                }
+                
+
+            }
+        }
+
+    }
+    
+}
+
+@media (min-width:768px) {
+    .searchNfts {
+        .search__nfts__h {
+            font-size: 38px;
+            line-height: 45px;
+        }
+
+        .hero__bottom {
+            .hero__bottom__cover {
+                display: flex;
+                justify-content: center;
+                .hero__bottom__cover__inner {
+                    display: flex;
+                    justify-content: center;
+                    gap: 0;
+                    .hero__btn__p {
+                        width: 340px;
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                    .hero__btn__span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 25px;
+                        border-radius: 20px;
+                        background-color: #3B3B3B;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 13px;
+                        color: #fff;
+                        padding: 5px 10px;
+                        font-family: mono;
+                        padding-left: -50px;
+                    }
+                    }
+
+                }
+                
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:1000px) {
+    .searchNfts {
+        .search__nfts__h {
+            font-size: 51px;
+            line-height: 56px;
+            color: #fff;
+        }
+        .search__nfts__p {
+            font-size: 22px;
+            line-height: 35px;
+        }
+
+        .hero__bottom {
+            .hero__bottom__cover {
+                .hero__bottom__cover__inner {
+                    .hero__btn__p {
+                        width: 525px;
+                    }
+                }   
+            }
+        }
+    }
+}
+

@@ -1,0 +1,235 @@
+.discover {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  margin-top: 40px;
+  padding-bottom: 80px;
+  align-items: center;
+  background-color: #3B3B3B;
+  width: 100%;
+
+  .discover__innner {
+    margin-top: 60px;
+    
+  }
+
+  .discover__top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    .discover__top__h {
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 39px;
+      color: #fff;
+    }
+    .disover__top__p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+    }
+  }
+
+  .discover__cards {
+    // background-color: green;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    // width: 100%;
+    align-items: center;
+    // justify-content: center;
+    .discover__card {
+      // width: 315px;
+      background-color: #2B2B2B;
+      border-radius: 20px;
+      .discover__card__img {
+        width: 100%;
+      }
+      .discover__info__box {
+        padding: 20px;
+        .discover__info__box__h {
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 30px;
+          color: #fff;
+        }
+        .discover__info__box__avatars {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding-bottom: 22px;
+          .discover__info__box__avatars__p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #fff;
+            font-family: mono;
+          }
+        }
+        .discover__card__sales {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .discover__card__sales__info__text {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 13px;
+              color: #858584;
+              letter-spacing: 0.5px;
+              font-family: mono;
+            }
+          }
+          .discover__card__sales__info__num {
+            display: flex;
+            justify-content: space-between;
+            p {
+              font-family: mono;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 13px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .discover__top__btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: transparent;
+    border: 2px solid #a259ff;
+    display: none;
+    i {
+      font-size: 16px;
+      color: #a259ff;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+    &:hover p {
+      color: #a259ff;
+    }
+  }
+  .discover__card__btn {
+    width: 315px;
+    height: 71px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: transparent;
+    border: 2px solid #a259ff;
+    i {
+      font-size: 18px;
+      color: #a259ff;
+    }
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+    &:hover p {
+      color: #a259ff;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .discover {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .discover__top {
+      width: 700px;
+      display: flex;
+      justify-content: space-between;
+      .discover__top__btn {
+        display: flex;
+      }
+    }
+    .discover__cards {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      .discover__card {
+        width: 330px;
+        .discover__card__img {
+          width: 100%;
+        }
+      }
+    }
+    .discover__card__btn {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1180px) {
+  .discover {
+    display: flex;
+    flex-direction: column;
+    .discover__top {
+      width: 100%;
+      .discover__top__btn {
+        display: flex;
+      }
+    }
+    .discover__cards {
+      width: 100%;
+      // background-color: red;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      .discover__card {
+        // width: 420px;
+      }
+    }
+    .discover__card__btn {
+      display: none;
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .discover {
+    .discover__top {
+      width: 100%;
+      .discover__top__btn {
+        display: flex;
+      }
+    }
+    .discover__cards {
+     
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      .discover__card {
+        width: 420px;
+      }
+    }
+    .discover__card__btn {
+      display: none;
+    }
+  }
+}
